@@ -8,6 +8,8 @@ function logout(){
             document.querySelector(".show2").classList.remove("block");
             document.querySelector(".herro").classList.add("flex");
             document.querySelector(".herro").classList.remove("hidden");
+            document.getElementById("name").value='';
+            document.getElementById("pass").value='';
      },1500)
      
      document.querySelector(".success").classList.remove("hidden");

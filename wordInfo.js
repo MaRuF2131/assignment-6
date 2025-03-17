@@ -16,7 +16,7 @@
                            <p class="bg-green-300 p-2 rounded-sm">${element}</p>
                      `
                 }) 
-            if(el==='') el=`<p class="bg-green-300 p-2 rounded-sm">"খুঁজে পাইনি"</p>`;
+            if(el==='') el=`<p class="bg-green-300 p-2 rounded-sm">"No synonyms availbe"</p>`;
 
           document.querySelector(".popup").classList.remove("hidden");
           document.querySelector(".popup").innerHTML=`
@@ -43,12 +43,12 @@
 
                                     <div>
                                     <p class="font-bold text-md">Meaning</p>
-                                    <p>${data.meaning || "খুঁজে পাইনি"}</p>
+                                    <p>${data.meaning || "No meaning availbe"}</p>
                                     </div>
 
                                     <div>
                                     <p class="font-bold text-md">Example</p>
-                                    <p>${data.sentence || "খুঁজে পাইনি"}</p>
+                                    <p>${data.sentence || "No sentence Example"}</p>
                                     </div>
 
                                     <div>
